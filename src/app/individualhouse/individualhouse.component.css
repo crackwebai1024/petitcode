@@ -43,3 +43,25 @@ button{
     border-radius: 5px;
     background-color: rgb(27, 30, 211);
 }
+
+@media only screen and (max-width: 600px){
+    .key, .value{
+        width: 100%;
+    }
+    .item{
+        flex-wrap: wrap;
+    }
+    .value{
+        border-left: none;
+    }
+    .item{
+        background-color: none !important;
+    }
+    .value{
+        background-color: #ccc;
+        word-break: break-all;
+    }
+    .wrapper{
+        padding: 70px 10px 10px 10px;
+    }
+}
