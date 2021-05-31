@@ -1,0 +1,43 @@
+.extractWrapper{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px 2px #aaa;
+    padding: 20px 20px;
+}
+
+.houseExtract{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding-left: 20px;
+    padding-right:20px;
+    align-items: center;
+}
+
+.houseExtract:nth-child(even){
+    background-color: #ddd;
+}
+
+.houseExtract:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#id{
+    width: 10%;
+}
+
+#name{
+    width: 30%;
+}
+
+#region{
+    width: 20%;
+}
+
+#coatOfArms{
+    width: 40%;
+}

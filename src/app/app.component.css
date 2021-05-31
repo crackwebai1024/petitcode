@@ -1,0 +1,20 @@
+.nav-header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    padding-left: 30px;
+    background-color: rgba(47, 0, 200, 0.733);
+    z-index: 10;
+}
+
+.bg-header{
+    width: 100vw;
+    height: 80px;
+    margin:0px;
+}
+.nav-header img{
+    height: 60px;
+    width: 100px;
+}

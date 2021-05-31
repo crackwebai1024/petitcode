@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <button (click) = "goBack()">Back</button>
+    <div class="item" *ngFor="let item of house">
+        <div 
+            class="key" 
+            *ngIf="item[1].length > 0 && nestArr.indexOf(item[0]) === -1"
+        >
+            {{item[0]}}
+        </div>
+        <div 
+            class="value" 
+            *ngIf="item[1].length > 0 && nestArr.indexOf(item[0]) === -1"
+        >
+            {{item[1]}}
+        </div>
+        <div 
+            class="key" 
+            *ngIf="nestArr.indexOf(item[0]) !== -1 && item[1].length > 0 && item[1][0].length > 0"
+        >
+            {{item[0]}}
+        </div>
+        <div 
+            class="value" 
+            *ngIf="nestArr.indexOf(item[0]) !== -1 && item[1].length > 0 && item[1][0].length > 0"
+        >
+            <p class="member" *ngFor="let member of item[1]">{{member}}</p>
+        </div>
+    </div>
+</div>

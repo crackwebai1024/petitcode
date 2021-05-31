@@ -1,0 +1,45 @@
+.wrapper{
+    position: relative;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
+    width: 90vw;
+    box-shadow: 0px 3px 10px 2px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.item:nth-child(even){
+    background-color: #ddd;
+}
+
+.key, .value{
+    width: 50%;
+    padding: 20px;
+}
+.value{
+    border-left: solid 1px black;
+}
+
+button{
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    border:none;
+    outline: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(27, 30, 211);
+}

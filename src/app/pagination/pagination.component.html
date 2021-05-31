@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="page-num" (click)="goFirst()">&lt;&lt;</div>
+    <div class="page-num" (click)="goBackward()">&lt;</div>
+    <div 
+        class="page-num" 
+        *ngFor="let page of pages" 
+        (click)="selectPage(page)" 
+        [class.selected]="selected === page"
+        [class.hidden]="page === 0"
+    >
+        {{page}}
+    </div>
+    <div class="page-num" (click)="goForward()">&gt;</div>
+    <div class="page-num" (click)="goLast()">&gt;&gt;</div>
+</div>

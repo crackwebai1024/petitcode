@@ -1,0 +1,15 @@
+<div class="extractWrapper">
+    <div class="houseExtract">
+        <p id="id">No</p>
+        <p id="name">Name</p>
+        <p id="region">Region</p>
+        <p id="coatOfArms">Coat of Arms</p>
+    </div>
+    <div *ngFor="let houseExtract of items" class="houseExtract" (click)="navigate(houseExtract.id)">
+        <p id="id">{{houseExtract.id}}</p>
+        <p id="name">{{houseExtract.name}}</p>
+        <p id="region">{{houseExtract.region}}</p>
+        <p id="coatOfArms">{{houseExtract.coatOfArms}}</p>
+    </div>
+    <app-pagination></app-pagination>
+</div>
